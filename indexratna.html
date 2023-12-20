@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<style type="text/css">
+		body{
+			background-color: darkred;
+		}
+		#container{
+			width: 900px;
+			color: #white;
+			font-size: 20px;
+			text-align: center;
+			height: auto;
+			margin: auto;
+		}
+		#header{
+			height: 300px;
+			background-color: lightyellow;
+			background-image: url("kuekering.JPG");
+			background-size: 100% 100%;
+			padding-bottom: 30px;
+		}
+		.nav{
+			background-color: #darkred;
+		}
+		.nav ul li {
+			display: inline-block;
+			font: bold 15px sans-serif;
+			padding: 10px 0px 10px 25px;
+		}
+		.nav a{
+			text-decoration: none;
+			color: #whitesmoke;
+		}
+		#content{
+			height: 650px;
+			width:100%;
+			background-color: whitesmoke;
+			float: left;
+		}
+		#content p{
+			font-size: 17px;
+			text-align: justify;
+			padding: 4px 12px 4px 12px;
+		}
+		#content img{
+			float: left;
+			margin-right: 20px;
+			margin-left: 15px;
+			margin-top: 20px;
+		}
+		img{
+			width: 200px;
+			height: 200px;
+		}
+		#content .gambarkiri{
+			float: left;
+			margin-right: 20px;
+			margin-top: 5px;
+		}
+		#footer{
+			height: 90px;
+			background-color: #grey;
+			clear: both;
+			font-size: 25px;
+			padding-top: 30px;
+		}
+		#nav{
+			height: 50px;
+			background-color: #black;
+			font-size: 19px;
+			padding-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header"></div>
+		<div id="nav">
+			   <a href="indexratna.html">Home</a>  
+			   <a href="galeryratna.html">Gallery</a>
+			   <a href="aboutusratna.html">About Us</a>  
+			   <a href="contactusratna.html">Contact Us</a>
+			</ul>
+		<script>
+		var waktu = new Date();
+		var jam = waktu.getHours();
+		var tgl = waktu.getDate();
+		var bln = waktu.getMonth();
+		var thn = waktu.getFullYear();
+		var hr = waktu.getDay();
+
+		var bulan = ["jan","Feb","Mret","Apr","Mei","jun","jul","Agst","Sep","Okt","Nov","Desember"];
+		var hari = ["Minggu","Senin","Selasa","Rabu"];
+		// bulan(11);
+
+		if (jam<=10) {
+			document.write("Hai Selamat Pagi");
+		} else if (jam<=14) {
+			document.write("Hai Selamat Siang");
+		} else if (jam<=17) {
+			document.write("Hai Selamat Sore");
+		} else {
+			document.write("Hai Selamat Malam")
+		}
+		document.write(hari[hr]+", "+tgl+" "+bulan[bln]+" "+thn+"<br>");
+	</script>
+
+		</div>
+		<div id="content">
+			<h2><b>WELCOME TO KAMPOENG NASTAR</b></h2><hr>
+			<img src="nastar2.jpeg">
+			<p><b>Sejarah Kue Kering</b></p>
+			<p> Keberadaan kue kering, sudah dikenal sejak abad ke-7 oleh bangsa Persia atau kini dikenal dengan nama Iran. Uniknya, kue kecil ini tercipta secara tidak sengaja. Sejarah penemuan kue kering berasal dari para tukang roti yang ingin membuat kue seperti biasanya.</p>
+			<p><b></b> Saat hendak memanggang kue, para tukang kue kesulitan menentukan suhu oven yang akan digunakan. Untuk mendapatkan suhu yang tepat, mereka pun melakukan percobaan kecil dengan menjatuhkan sedikit adonan kue ke dalam oven. Namun, siapa sangka, sedikit adonan yang terjatuh tadi justru bisa mengembang dan memiliki rasa yang renyah. Inilah kemudian menjadi awal terciptanya kue kering.</p>
+			<p>Di Timur Tengah, kue kering sering kali terkait dengan perayaan agama, seperti Idul Fitri. Kue-kue kering khas Timur Tengah, seperti ma'amoul dari Mesir atau ka'ak dari Lebanon, memainkan peran penting selama perayaan agama dan budaya. Di Asia, kue kering tradisional seperti kue bulan di Tiongkok atau kue kering kacang di Indonesia memiliki sejarah yang panjang.</p>
+			<p>Di Amerika Serikat, sejarah kue kering terkait erat dengan imigrasi dan pengaruh budaya. Selama Thanksgiving dan Natal, kue kering seperti chocolate chip cookies dan sugar cookies menjadi hidangan utama. Selama abad ke-20, perkembangan teknologi dan perubahan dalam bahan-bahan membuat proses pembuatan kue kering menjadi lebih efisien, dan kue kering menjadi makanan ringan populer sepanjang tahun.</p>
+			<p>Seiring berkembangnya industri makanan dan kekreatifan para koki, kue kering telah mengalami inovasi yang signifikan. Mulai dari kue kering bebas gluten hingga kue kering dengan isian yang unik, variasi kue kering terus berkembang. Pada zaman modern, kue kering juga sering menjadi produk bisnis kecil atau hobi untuk banyak orang yang mengekspresikan kreativitas mereka.</p>
+		</div>
+		<div id="footer">
+			<p>&copy; CopyRight 2023 - Ratna Sari Dewi - 231011700470 - 01SIFP009</p>
+		</div>
+	</p>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: darkred;
+        }
+        #container{
+            width: 900px;
+            color: #white;
+            font-size: 20px;
+            text-align: center;
+            height: auto;
+            margin: auto;
+        }
+
+       #header{
+            width: 95,5%;
+            padding:5em;
+            background-image: url("kuekering.JPG");
+            position: flexibel;
+        }
+        #nav{
+            background-color: whitesmoke;
+        }
+
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #darkred;
+            color: #black;
+        }
+    </style>
+    <title>Contact Us</title>
+</head>
+<body>
+
+   <div id="container">
+        <div id="header"></div>
+        <div id="nav">
+               <a href="indexratna.html">Home</a>  
+               <a href="galeryratna.html">Gallery</a>
+               <a href="aboutusratna.html">About Us</a>  
+               <a href="contactusratna.html">Contact Us</a>
+            </ul>
+        </div>
+        <script>
+        var waktu = new Date();
+        var jam = waktu.getHours();
+        var tgl = waktu.getDate();
+        var bln = waktu.getMonth();
+        var thn = waktu.getFullYear();
+        var hr = waktu.getDay();
+
+        var bulan = ["jan","Feb","Mret","Apr","Mei","jun","jul","Agst","Sep","Okt","Nov","Desember"];
+        var hari = ["Minggu","Senin","Selasa","Rabu"];
+        // bulan(11);
+
+        if (jam<=10) {
+            document.write("Hai Selamat Pagi");
+        } else if (jam<=14) {
+            document.write("Hai Selamat Siang");
+        } else if (jam<=17) {
+            document.write("Hai Selamat Sore");
+        } else {
+            document.write("Hai Selamat Malam")
+        }
+        document.write(hari[hr]+", "+tgl+" "+bulan[bln]+" "+thn+"<br>");
+    </script>
+    </div>
+
+    <section>
+        <h2>Send us a message</h2>
+        <form action="#" method="post">
+                Nama : <input type="text"size="40" placeholder="input Nama Anda">
+                NIM : <input type="text" size="40" placeholder="input Nim Anda">
+                Alamat : <input type="text" size="40" placeholder="input Kode Kelas Anda">
+                E-mail : <input type="text" size="40"placeholder="input Alamat Anda">
+                Tanggal lahir : <input type="date" name="date">
+                Upload File : <input type="file" name="dokumen">
+                <input type="submit" name="submit" value="kirim" /><input type="reset" name="reset" value="Batal" />
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; CopyRight 2023 - Ratna Sari Dewi - 231011700470 - 01SIFP009</p>
+    </footer>
+
+</body>
+</html>

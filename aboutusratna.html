@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<style type="text/css">
+		body{
+			background-color: darkred;
+		}
+		#container{
+			width: 900px;
+			color: #white;
+			font-size: 20px;
+			text-align: center;
+			height: auto;
+			margin: auto;
+		}
+		#header{
+			height: 350px;
+			background-color: lightyellow;
+			background-image: url("kuelebaran.JPG");
+			background-size: 100% 100%;
+			padding-bottom: 30px;
+			padding-top: 20px;
+		}
+		.nav{
+			background-color: #whitesmoke;
+		}
+		.nav ul li {
+			display: inline-block;
+			font: bold 15px sans-serif;
+			padding: 10px 0px 10px 25px;
+		}
+		.nav a{
+			text-decoration: none;
+			color: #whitesmoke;
+		}
+		#content{
+			height: 630px;
+			width:100%;
+			background-color: whitesmoke;
+			float: left;
+		}
+		#content p{
+			font-size: 17px;
+			text-align: justify;
+			padding: 4px 12px 4px 12px;
+		}
+		#content img{
+			float: left;
+			margin-right: 20px;
+			margin-left: 15px;
+			margin-top: 20px;
+		}
+		img{
+			width: 200px;
+			height: 200px;
+		}
+		#content .gambarkiri{
+			float: left;
+			margin-right: 20px;
+			margin-top: 5px;
+		}
+		#footer{
+			text-align: center;
+			height: 90px;
+			background-color: auto;
+			clear: both;
+			font-size: 25px;
+			padding-top: 30px;
+
+		}
+		#nav{
+			height: 50px;
+			background-color: auto;
+			font-size: 19px;
+			padding-top: 20px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+		</div>
+		<div id="nav">
+			   <a href="indexratna.html">Home</a>  
+			   <a href="galeryratna.html">Galery</a>
+			   <a href="aboutusratna.html">About Us</a>  
+			   <a href="contactusratna.html">Contact Us</a>
+			</div>
+		<script>
+		var waktu = new Date();
+		var jam = waktu.getHours();
+		var tgl = waktu.getDate();
+		var bln = waktu.getMonth();
+		var thn = waktu.getFullYear();
+		var hr = waktu.getDay();
+
+		var bulan = ["jan","Feb","Mret","Apr","Mei","jun","jul","Agst","Sep","Okt","Nov","Desember"];
+		var hari = ["Minggu","Senin","Selasa","Rabu"];
+		// bulan(11);
+
+		if (jam<=10) {
+			document.write("Hai Selamat Pagi");
+		} else if (jam<=14) {
+			document.write("Hai Selamat Siang");
+		} else if (jam<=17) {
+			document.write("Hai Selamat Sore");
+		} else {
+			document.write("Hai Selamat Malam")
+		}
+		document.write(hari[hr]+", "+tgl+" "+bulan[bln]+" "+thn+"<br>");
+	</script>
+		</div>
+		<div id="content">
+			<h2><b>SEJARAH KUE KERING</b></h2><hr>
+			<p><b>Kue Kering</b> Sejarah kue kering mencakup perjalanan panjang melintasi zaman dan budaya. Meskipun sulit untuk menentukan titik awal pasti, kita dapat melihat evolusi kue kering dari berbagai budaya di seluruh dunia. Berikut adalah kilas balik sejarah kue kering:</p>
+
+<p>1. Abad Pertengahan di Eropa:
+Kue kering memiliki akar yang kuat di Eropa, terutama selama Abad Pertengahan. Pada awalnya, kue kering mungkin lebih mirip roti keras dan terkadang dihidangkan sebagai makanan untuk para pelaut selama perjalanan laut panjang. Kue tersebut kemudian mulai mengalami perkembangan, dan pada abad ke-17, kue kering menjadi semakin populer di kalangan kelas menengah.</p>
+
+<p>2. Tradisi Natal dan Natal di Eropa:
+Pada abad ke-19, kue kering menjadi bagian yang tak terpisahkan dari tradisi Natal di Eropa. Banyak resep kue kering klasik, seperti gingerbread, spritz cookies, dan mince pies, menjadi hidangan wajib selama musim liburan. Kue kering sering kali dihiasi dengan bentuk-bentuk Natal atau diwarnai dengan pewarna alami.</p>
+
+<p>3. Kue Kering di Timur Tengah dan Asia:
+Di Timur Tengah, kue kering sering kali terkait dengan perayaan agama, seperti Idul Fitri. Kue-kue kering khas Timur Tengah, seperti ma'amoul dari Mesir atau ka'ak dari Lebanon, memainkan peran penting selama perayaan agama dan budaya. Di Asia, kue kering tradisional seperti kue bulan di Tiongkok atau kue kering kacang di Indonesia memiliki sejarah yang panjang.</p>
+
+<p>4. Pergeseran di Amerika Serikat:
+Di Amerika Serikat, sejarah kue kering terkait erat dengan imigrasi dan pengaruh budaya. Selama Thanksgiving dan Natal, kue kering seperti chocolate chip cookies dan sugar cookies menjadi hidangan utama. Selama abad ke-20, perkembangan teknologi dan perubahan dalam bahan-bahan membuat proses pembuatan kue kering menjadi lebih efisien, dan kue kering menjadi makanan ringan populer sepanjang tahun.</p>
+<p>Melalui perjalanan sejarahnya, kue kering telah menjadi lebih dari sekadar hidangan pencuci mulut; mereka mencerminkan tradisi, perayaan, dan kekreatifan dalam berbagai budaya di seluruh dunia.</p>
+			</div>
+		<div id="sidebar">
+		<div id="footer">
+			<p>&copy; CopyRight 2023 - Ratna Sari Dewi - 231011700470 - 01SIFP009</p>
+		</div>
+	</p>
+</div>
+</body>
+</html>
+			
+
+
+
